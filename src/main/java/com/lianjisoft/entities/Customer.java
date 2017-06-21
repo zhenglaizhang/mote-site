@@ -1,10 +1,7 @@
 package com.lianjisoft.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Version;
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
 /**
@@ -21,6 +18,8 @@ public class Customer {
     private Integer version;
 
     private String customerId;
+
+    @Size(min=4, max=35)
     private String name;
     private BigDecimal price;
 
