@@ -16,7 +16,7 @@ export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
 mvn spring-boot:run
 ```
 - navigate to http://localhost:8080
-- perform any updates and compile it through `mvn compile` or `Ctrl + Shift + F9` (Intellij), springloaded loads new class files
+- perform any updates and compile it through `mvn compile` or `Ctrl + F9` (Intellij), springloaded loads new class files
 - refresh related page
 
 ## Database configuration 
