@@ -28,6 +28,18 @@ public class CustomerController {
      * @param model
      * @return
      */
+    @RequestMapping(value = "/account", method = RequestMethod.GET)
+    public String accountView(Model model) {
+        model.addAttribute("customers", customerService.listAllCustomers());
+        return "account";
+    }
+
+    /**
+     * List all customers.
+     *
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/customers", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("customers", customerService.listAllCustomers());

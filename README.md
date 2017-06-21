@@ -7,6 +7,7 @@ This project is based on the [Spring Boot](http://projects.spring.io/spring-boot
 - Spring Data (Hibernate & MySQL)
 - Spring MVC (Tomcat)
 - [Thymleaf](www.thymeleaf.org)
+- [Navbar](https://bootsnipp.com/snippets/featured/fancy-sidebar-navigation)
 
 ## Installation
 
