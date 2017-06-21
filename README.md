@@ -22,11 +22,11 @@ mvn spring-boot:run
 (or you could turn on Intellij `Settings -> Build project automatically` feature)
 
 ## Database configuration 
-Create a MySQL database with the name `springbootdb`and add the credentials to `/resources/application.properties`.  
+Create a MySQL database with the name `motel`and add the credentials to `/resources/application.properties`.
 The default ones are :
 
 ```
-spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb
+spring.datasource.url=jdbc:mysql://localhost:3306/motel
 spring.datasource.username=root
 spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
@@ -39,6 +39,7 @@ spring.jpa.hibernate.ddl-auto=update
 - auth login
 - update customer
 - gradle support
+- docker integration
 
 ```
 export JAVA_OPTS=-Xmx1024m -XX:MaxPermSize=128M
