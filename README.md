@@ -10,10 +10,14 @@ This project is based on the [Spring Boot](http://projects.spring.io/spring-boot
 
 ## Installation
 
+- start local
 ```
+export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
 mvn spring-boot:run
 ```
-
+- navigate to http://localhost:8080
+- perform any updates and compile it through `mvn compile` or `Ctrl + Shift + F9` (Intellij), springloaded loads new class files
+- refresh related page
 
 ## Database configuration 
 Create a MySQL database with the name `springbootdb`and add the credentials to `/resources/application.properties`.  
@@ -26,5 +30,11 @@ spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-## Usage 
-Run the project and head out to [http://localhost:8080](http://localhost:8080)
+## TODO
+
+- gradle support
+
+```
+export JAVA_OPTS=-Xmx1024m -XX:MaxPermSize=128M
+gradle bootRun
+```
