@@ -10,8 +10,12 @@ This project is based on the [Spring Boot](http://projects.spring.io/spring-boot
 
 ## Installation
 
-- start local
+- local
 ```
+sudo pacman -S mariadb
+mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl start mariadb.service
+mysql_secure_installation # set root password as `1234` ( todo: use safer way)
 export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
 mvn spring-boot:run
 ```
