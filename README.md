@@ -35,6 +35,7 @@ spring.jpa.hibernate.ddl-auto=update
 ## TODO
 
 - template
+- http://jvmhub.com/2015/08/02/spring-boot-with-thymeleaf-tutorial-part-2-forms-with-validation/
 - file uploading
 - auth login
 - update customer
