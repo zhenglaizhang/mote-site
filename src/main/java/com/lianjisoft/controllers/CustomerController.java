@@ -47,7 +47,6 @@ public class CustomerController {
         return "customershow";
     }
 
-    // Afficher le formulaire de modification du Customer
     @RequestMapping("customer/edit/{id}")
     public String edit(@PathVariable Integer id, Model model) {
         model.addAttribute("customer", customerService.getCustomerById(id));

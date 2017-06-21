@@ -14,5 +14,4 @@ public class RoomController {
     String index() {
         return "rooms";
     }
-
 }

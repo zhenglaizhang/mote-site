@@ -19,6 +19,8 @@ mvn spring-boot:run
 - perform any updates and compile it through `mvn compile` or `Ctrl + F9` (Intellij), springloaded loads new class files
 - refresh related page
 
+(or you could turn on Intellij `Settings -> Build project automatically` feature)
+
 ## Database configuration 
 Create a MySQL database with the name `springbootdb`and add the credentials to `/resources/application.properties`.  
 The default ones are :
@@ -32,6 +34,10 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## TODO
 
+- template
+- file uploading
+- auth login
+- update customer
 - gradle support
 
 ```
